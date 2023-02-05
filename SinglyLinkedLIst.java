@@ -25,7 +25,7 @@ public class SinglyLinkedLIst<E> {
         return tail.getElement();
     }
     public void addFirst(E e){
-        head=new Node<E>(e,null);
+        head=new Node<E>(e,head);
         if(size==0) tail=head;
         size++;
     }
